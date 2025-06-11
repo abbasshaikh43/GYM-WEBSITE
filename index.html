@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>GYM GURU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="https://use.fontawesome.com/0e46e58ec0.js"></script>
+  </head>
+  <body>
+
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" width="80rem">
+        </div>
+        
+        <a href="#">HOME</a>
+        <a href="#container">FEATURED</a>
+        <a href="#main-focus">OUR FOCUS</a>
+        <a href="#fitness-classes">COURSES</a>
+        <a href="#gallery-details">ABOUT US</a>
+        <a href="join.html">JOIN US</a>
+       <div class="login" id="login">
+        <a href="login.html#"><i class="bi bi-person-circle"></i></a>
+       </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="overlay">
+            <h4>GYM FOR FITNESS <br> NOT FOR SHAPE</h4>
+            <p>Fitness is the state of being physically and mentally healthy through regular exercise,<br>
+                 proper nutrition, and an active lifestyle. It enhances strength, endurance, flexibility,<br>
+                  and overall well-being. Prioritizing fitness improves heart health, boosts energy levels, <br>
+                  reduces stress, and prevents diseases, promoting a better quality of life.</p>
+            <button onclick="alert('Getting Started!')">Get Started</button>
+        </div>
+        <div class="contentimg">
+            <img src="content.jpg">
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="left-section">
+            <h2>Features</h2>
+            <div style=" border-left: 4px solid #fff; ">
+            <div class="buttons">
+                <button class="animated-btn">Courses</button>
+                <button class="animated-btn">Yoga</button>
+                <button class="animated-btn">Online Training</button>
+                <button class="animated-btn">Gym Equipment</button>
+            </div>
+        </div>
+        </div>
+        <div class="right-section">
+            <video autoplay muted loop>
+                <source src="WhatsApp Video 2025-02-04 at 7.37.41 PM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+   
+    <div class="main-focus" id="main-focus">
+        <h2>Our Main Focus</h2>
+        <div class="focus-cards">
+            <div class="focus-card">
+                <h3>Yoga</h3>
+                <p>Improve flexibility and mindfulness with our expert-led yoga sessions. Join us today!</p>
+                <video autoplay muted loop>
+                    <source src="yoga video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="focus-card">
+                <h3>Physical Training</h3>
+                <p>Get personalized training sessions with our certified trainers, available online at your convenience.</p>
+                <video autoplay muted loop>
+                <source src="physical.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="focus-card">
+                <h3>Nutrition Food</h3>
+                <p>Unlock your dream body with the right diet & workouts</p>
+                <video autoplay muted loop>
+                    <source src="food.mp4" type="video/mp4" width="80rem">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section class="fitness-classes" id="fitness-classes">
+        <h1 class="fade-in">ENROLL IN OUR FITNESS CLASSES</h1>
+        <div class="class-container">
+            <div class="class-card fade-in">
+                <h2>PERSONAL TRAINING</h2>
+                <p>A personal trainer can provide you with the resources you need to accomplish your fitness objective.</p>
+                <h2>₹3500</h2>
+                <a href="payment.html?course=personal_training">
+                    <button>ENROLL NOW</button>
+                </a>
+            </div>
+    
+            <div class="class-card fade-in">
+                <h2>GROUP TRAINING</h2>
+                <p>Having somebody by your side to support you is the best way to get through that additional rep.</p>
+                <h2>₹2500</h2>
+                <a href="payment.html?course=group_training">
+                    <button>ENROLL NOW</button>
+                </a>
+            </div>
+    
+            <div class="class-card fade-in">
+                <h2>OUTDOOR CLASSES</h2>
+                <p>Outdoor exercise can help ward off anxiety and increase feel-good hormones that boost your mood.</p>
+                <h2>₹4500</h2>
+                <a href="payment.html?course=outdoor_classes">
+                    <button>ENROLL NOW</button>
+                </a>
+            </div>
+    
+            <div class="class-card fade-in">
+                <h2>FREE SESSIONS</h2>
+                <p>Explore our free session classes</p>
+                <h2>₹0</h2>
+                <a href="payment.html?course=free_sessions">
+                    <button>ENROLL NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+        <section class="fitness-gallery">
+            <h1 class="fade-in">OUR FITNESS GALLERY</h1>
+            <div class="gallery">
+                <img src="gall.jpg" alt="Gallery Image 1" class="gallery-img">
+                <img src="gall1.png" alt="Gallery Image 2" class="gallery-img">
+                <img src="gall2.webp" alt="Gallery Image 3" class="gallery-img">
+                <img src="gall3.jpg" alt="Gallery Image 4" class="gallery-img">
+                <img src="gall4.jpeg" alt="Gallery Image 5" class="gallery-img">
+                <img src="gall1.png" alt="Gallery Image 2" class="gallery-img">
+                <img src="gall6.jpg" alt="Gallery Image 7" class="gallery-img">
+                <img src="gall7.jpg" alt="Gallery Image 8" class="gallery-img">
+            </div>
+            <button>VIEW GALLERY</button>
+        </section>
+        <section class="gallery-info">
+            <div class="profile-container">
+                <img src="abbas1.jpg" alt="Artist Abbas" class="profile-pic">
+                <div class="profile-text">
+                    <h3>ABBAS NOORUDDIN SHAIKH</h3>
+                    <br>
+                    <p>  <div class="socialmedia">
+                        <a href="https://www.instagram.com/abbasshaikh_16/#" class="bi bi-instagram"></a>
+                        <a href="https://in.linkedin.com/in/abbas-shaikh-33398b324?trk=people-guest_people_search-card#" class="bi bi-linkedin"></a>
+                        <a href="#" class="bi bi-facebook"></a>
+                        <a href="https://github.com/abbasshaikh43#" class="bi bi-github"></a>
+                      </div>
+              </p>
+                </div>
+            </div>    
+        <div class="gallery-details" id="gallery-details">
+            <span class="tag">GYM GURU</span>
+            <h1>GYM FOR FITNESS <br> NOT FOR SHAPE</h1>
+            <p>This Gym Guru website is a modern, user-friendly platform designed to promote fitness and well-being. It offers a variety of features aimed at helping individuals achieve their fitness goals through different services, including yoga, online training, gym equipment, and courses.</p>
+            <a href="#about" class="btn">MORE ABOUT US</a>
+        </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div style="color: #ffffff;">
+                        <h3>GYM GURU</h3>
+                        <p><i class="bi bi-geo-alt-fill"></i> Vashi, NAVI MUMBAI 400703</p>
+                        <p><i class="bi bi-envelope-fill"></i> contact@gymguru.com</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91 8291369731</p>
+                    </div>
+                </div>
+        
+                <div class="footer-links">
+                    <div style="color: #ffffff;"> 
+                        <div style="font-weight: bold;">
+                            <h4>Company</h4>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-links">
+                    <div style="color: #ffffff;"> 
+                        <div style="font-weight: bold;">
+                            <h4>Services</h4>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Online Training</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Gym Equipment</a></li>
+                        <li><a href="#">Nutrition Plans</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-links">
+                    <div style="color: #ffffff;"> 
+                        <div style="font-weight: bold;">
+                            <h4>Support</h4>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+        
+    
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #110c3d;
+            height: 800px;
+        }
+        .logo {
+            margin-left: 2rem;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background: #070707;
+            padding: 15px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 5rem;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: #ff9800;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar a:hover::after {
+            transform: scaleX(1);
+        }
+        .login{
+            margin-left: 10rem;
+            
+        }
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                display: none;
+            }
+            .navbar.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+        .hero-section {
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            position: relative;
+            text-align: left;
+            margin-top: -5rem;
+        }
+        .overlay {
+            color: white;
+            max-width: 50%;
+        }
+        .overlay h4 {
+            font-size: 5rem;
+            margin-bottom: 10px;
+        }
+        .overlay button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .overlay button:hover {
+            background: #e68900;
+        }
+    
+.container {
+    display: flex;
+    width: 80%;
+}
+.left-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+   
+    margin-left: 5rem;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+   
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px; 
+    height: 2px; 
+    
+  
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 2rem;
+    box-sizing: 2rem;
+  
+    
+
+}
+
+.animated-btn {
+    font-size: 2rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 5px 20px; 
+
+
+}
+
+.animated-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: -15rem;
+    margin-top: 6rem;
+    
+}
+
+video {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+}
+.main-focus {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #110c3d;
+}
+
+.main-focus h2 {
+    font-size: 6rem;
+    margin-bottom: 30px;
+}
+
+.focus-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.focus-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.focus-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.focus-card video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #fbf9f6;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.fitness-classes {
+    padding: 50px;
+}
+
+.class-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+}
+.fitness-gallery p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.class-card h2 {
+    margin-top: 15px;
+    color: white;
+    font-size: 2.5rem
+}
+
+.class-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.class-card button {
+    background: #ffb400;
+    border: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.class-card button:hover {
+    background: #e6a000;
+}
+
+.fitness-gallery {
+    padding: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    margin-top: 10%;
+    width: 50%;
+    border-radius: 5px;
+}
+.fitness-gallery button{
+    background: #ffb400;
+    border: none;
+    padding: 20px 25px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-left: 40rem;
+    margin-top: 1.5rem;
+   
+}
+.fitness-gallery button:hover{
+    background: #9e7b08;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.gallery-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: -150px;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text h3 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    
+}
+.profile-text p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.socialmedia a {
+    color: white;
+  font-size: 20px;
+}
+
+.gallery-details {
+    max-width: 600px;
+    margin-right: -35rem;
+    text-align: left;
+    margin-top: -5rem;
+}
+
+.gallery-details .tag {
+    display: inline-block;
+    background: #090909;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #fff
+}
+
+.gallery-details h1 {
+    font-size: 52px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.gallery-details p {
+    color: white;
+font-size: var(--fs-8);
+line-height: 1.8;
+padding-left: 15px;
+border-left: 1px solid;
+margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #b97d05;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c2ac05;
+}
+
+footer {
+    background: #493b89;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-about h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.social-icons  {
+    width: 24px;
+    margin-right: 10px;
+    opacity: 0.7;
+    transition: 0.3s;
+    margin-left:-8rem ;
+    color: white;
+}
+
+.social-icons a img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+        const modal = document.getElementById("modal");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+document.querySelectorAll(".gallery-img").forEach(img => {
+    img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+function displayProfileImage() {
+    const fileInput = document.getElementById("profileImageInput");
+    const profileImage = document.getElementById("profileImage");
+    
+    const file = fileInput.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            profileImage.src = e.target.result; // Set the uploaded image as the profile image
+        };
+        reader.readAsDataURL(file); // Read the uploaded file as a Data URL
+    }
+}
+
+
+
+    </script>
+  </body>
+</html>

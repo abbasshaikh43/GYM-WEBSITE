@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color:#110c3d;
+        }
+       
+        .scanner-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 70%;
+            max-width: 400px;
+          
+        }
+        .scanner-container img {
+            width: 100%;
+            height: auto;
+        }
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-methods img {
+            width: 80px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .amount-info {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .logo {
+            margin-left: 2rem;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background:#110c3d;
+            padding: 15px 10px;
+            position: relative;
+            z-index: 5;
+            margin-top: -3rem;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 5rem;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: #ff9800;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar a:hover::after {
+            transform: scaleX(1);
+        }
+        .login{
+            margin-left: 10rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" width="80rem">
+        </div>
+        
+        <a href="index.html">HOME</a>
+        <a href="#container">FEATURED</a>
+        <a href="#main-focus">OUR FOCUS</a>
+        <a href="#fitness-classes">COURSES</a>
+        <a href="#">ABOUT US</a>
+        <a href="join.html">JOIN US</a>
+       <div class="login" id="login">
+        <a href="login.html#"><i class="bi bi-person-circle"></i></a>
+       </div>
+    </nav>
+
+<div style="color: white;">
+    <div style="font-size: 1.5rem;">
+    <h1>Payment On Scanner</h1>
+</div>
+</div>
+    <div class="scanner-container">
+        <h2>Scan the QR Code to Pay</h2>
+        <div id="qr-code-scanner">
+            <img src="qr.png" alt="QR Code" id="qr-code">
+        </div>
+
+        <div class="amount-info">
+            Amount: ₹3500
+        </div>
+
+        <div class="payment-methods">
+            <img src="phone-pe-logo-round-icon-537e.png" alt="PhonePe" id="phonepe" onclick="selectPaymentMethod('PhonePe')" />
+            <img src="google-removebg-preview.png" alt="Google Pay" id="googlepay" onclick="selectPaymentMethod('Google Pay')" />
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const amount = urlParams.get('amount');
+        document.getElementById('amount').textContent = `₹${amount}`;
+
+        function selectPaymentMethod(method) {
+            alert(`You selected ${method} to complete your payment.`);
+        }
+    </script>
+
+</body>
+</html>
